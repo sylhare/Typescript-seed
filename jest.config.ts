@@ -8,7 +8,6 @@ const config: Config.InitialOptions = {
         "^.+\\.(ts|tsx)$": "ts-jest"
     },
     setupFilesAfterEnv: [],
-    collectCoverage: true,
     collectCoverageFrom: ["src/**/*.ts", "!src/index.ts"],
     coveragePathIgnorePatterns: [],
     coverageReporters: ["text", "text-summary", "lcov"],

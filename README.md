@@ -35,6 +35,6 @@ Lint the project using *ESLint*:
 
 ```bash
 npm run lint
-# To fix the linting erros
+# To fix the linting errors
 npm run lint:fix
 ```
