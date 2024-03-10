@@ -1,5 +1,7 @@
+import { hello } from '../src';
+
 describe('Test suite', () => {
-    it('should pass', () => {
-        expect(true).toBe(true)
+    it('should say hello', () => {
+        expect(hello()).toEqual('Hello, World!')
     })
 })
