@@ -1,0 +1,4 @@
+# Folders to ignore when copying in the Dockerfile in the builder stage
+node_modules
+dist
+coverage

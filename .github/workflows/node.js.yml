@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test:
+  test-build:
     runs-on: ubuntu-latest
     
     steps:
@@ -27,7 +27,10 @@ jobs:
     - name: Run test with coverage
       run: npm run test:cov
 
-  build:
+    - name: Run Build
+      run: npm run build
+
+  docker:
     runs-on: ubuntu-latest
 
     steps:
@@ -38,8 +41,5 @@ jobs:
         node-version: '18'
         cache: 'npm'
         
-    - name: Install Dependencies
-      run: npm ci
-          
-    - name: Run Build
-      run: npm run build   
+    - name: Build docker image
+      run: docker build -t typescript-project .
