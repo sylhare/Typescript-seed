@@ -1,0 +1,30 @@
+---
+version: 2
+updates:
+  - package-ecosystem: docker
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      docker:
+        patterns:
+          - "*"
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      typescript:
+        patterns:
+          - "typescript"
+          - "ts-node"
+      eslint:
+        patterns:
+          - "eslint-*"
+          - "@typescript-eslint/*"
+      jest:
+        patterns:
+          - "jest"
+          - "jest-*"
+          - "@types/jest"
+          - "ts-jest"
