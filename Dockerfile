@@ -1,11 +1,11 @@
-FROM node:22-alpine AS builder
+FROM node:23-alpine AS builder
 
 WORKDIR /app
 COPY . .
 RUN npm install
 RUN npm run build
 
-FROM node:18-alpine AS production
+FROM node:23-alpine AS production
 
 ARG NODE_ENV=production
 RUN addgroup -S docker && adduser -S user -G docker
