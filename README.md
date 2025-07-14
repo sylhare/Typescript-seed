@@ -3,38 +3,50 @@
 Seed project for typescript.
 Use this repository as a template for your typescript projects.
 
+## Prerequisites
+
+This project uses pnpm as the package manager. If you don't have pnpm installed, you can install it using one of the following methods:
+
+### Install pnpm globally via npm
+
+```bash
+npm install -g pnpm
+```
+
+For other installation methods, visit: https://pnpm.io/installation
+
 ## Getting Started
 
 Install the dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 Build the project:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 Run the project:
 
 ```bash
-npm start
+pnpm start
 ```
 
 Test the project using *Jest*:
 
 ```bash
-npm test
+pnpm test
 # To test and display the coverage
-npm test:cov
+pnpm test:cov
 ```
 
 Lint the project using *ESLint*:
 
 ```bash
-npm run lint
+pnpm run lint
 # To fix the linting errors
-npm run lint:fix
+pnpm run lint:fix
 ```
