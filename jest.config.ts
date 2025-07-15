@@ -1,6 +1,6 @@
-import type {Config} from '@jest/types';
+import type {Config} from 'jest';
 
-const config: Config.InitialOptions = {
+const config: Config = {
     preset: "ts-jest",
     testRegex: "\\.(test|e2e)\\.ts$",
     moduleFileExtensions: ["ts", "js", "json"],
