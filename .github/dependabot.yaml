@@ -9,7 +9,7 @@ updates:
       docker:
         patterns:
           - "*"
-  - package-ecosystem: pnpm
+  - package-ecosystem: npm
     directory: "/"
     schedule:
       interval: "monthly"
