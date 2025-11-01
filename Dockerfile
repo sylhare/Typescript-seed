@@ -1,4 +1,4 @@
-FROM node:24-alpine AS builder
+FROM node:25-alpine AS builder
 
 # Install pnpm
 RUN npm install -g pnpm
@@ -8,7 +8,7 @@ COPY . .
 RUN pnpm install
 RUN pnpm run build
 
-FROM node:24-alpine AS production
+FROM node:25-alpine AS production
 
 # Install pnpm
 RUN npm install -g pnpm
