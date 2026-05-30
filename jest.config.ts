@@ -5,7 +5,11 @@ const config: Config = {
     testRegex: "\\.(test|e2e)\\.ts$",
     moduleFileExtensions: ["ts", "js", "json"],
     transform: {
-        "^.+\\.(ts|tsx)$": "ts-jest"
+        "^.+\\.(ts|tsx)$": ["ts-jest", {
+            tsconfig: {
+                rootDir: ".",
+            },
+        }]
     },
     setupFilesAfterEnv: [],
     collectCoverageFrom: ["src/**/*.ts", "!src/index.ts"],

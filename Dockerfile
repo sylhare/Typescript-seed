@@ -20,6 +20,7 @@ WORKDIR /app
 
 COPY --from=builder --chown=user:docker /app/package.json ./
 COPY --from=builder --chown=user:docker /app/pnpm-lock.yaml ./
+COPY --from=builder --chown=user:docker /app/pnpm-workspace.yaml ./
 COPY --from=builder --chown=user:docker /app/dist ./dist
 RUN pnpm install --frozen-lockfile --prod && pnpm store prune
 
