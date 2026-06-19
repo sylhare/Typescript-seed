@@ -7,7 +7,7 @@
     "build": "tsc",
     "test": "jest",
     "test:cov": "jest --coverage",
-    "lint": "eslint --ext .ts src",
+    "lint": "eslint --ext .ts src tests",
     "lint:fix": "eslint --fix src tests --ext=.ts",
     "start": "ts-node src/index.ts"
   },
