@@ -20,9 +20,9 @@
     "@typescript-eslint/parser": "^8.62.1",
     "eslint": "^10.8.0",
     "eslint-plugin-jest": "^29.15.4",
-    "jest": "^30.4.2",
+    "jest": "^30.5.1",
     "ts-node": "^10.9.2",
-    "ts-jest": "^29.4.11",
+    "ts-jest": "^29.4.12",
     "typescript": "^6.0.3"
   },
   "dependencies": {},
