@@ -17,14 +17,10 @@ updates:
       typescript:
         patterns:
           - "typescript"
-          - "ts-node"
-      eslint:
+      oxlint:
         patterns:
-          - "eslint-*"
-          - "@typescript-eslint/*"
-      jest:
+          - "oxlint"
+      vite:
         patterns:
-          - "jest"
-          - "jest-*"
-          - "@types/jest"
-          - "ts-jest"
+          - "vite"
+          - "vite-*"
