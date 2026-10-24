@@ -15,7 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^30.0.0",
-    "@types/node": "^26.6.4",
+    "@types/node": "^26.6.5",
     "jest": "^30.4.2",
     "oxlint": "^1.88.0",
     "ts-jest": "^29.4.11",
