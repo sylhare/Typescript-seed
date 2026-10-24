@@ -1,3 +1,0 @@
-# unrs-resolver is a native binding (Rust) transitive dependency of @typescript-eslint
-allowBuilds:
-  unrs-resolver: true

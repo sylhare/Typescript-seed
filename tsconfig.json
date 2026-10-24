@@ -1,14 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "typeRoots": [
-      "node_modules/@types"
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": [
+      "vitest/globals",
+      "node"
     ],
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "removeComments": true,
     "declaration": true,
     "strict": true,
     "strictNullChecks": true,
@@ -19,13 +17,12 @@
     "isolatedModules": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "tests/**/*",
+    "vite.config.ts"
   ],
   "exclude": [
     "node_modules",
-    "jest.config.ts",
-    "test*/*",
-    "dist",
-    "**/*spec.ts"
+    "dist"
   ]
 }

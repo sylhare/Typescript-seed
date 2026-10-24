@@ -35,12 +35,14 @@ Run the project:
 pnpm start
 ```
 
-Test the project using *Jest*:
+Test the project using *Vitest*:
 
 ```bash
 pnpm test
 # To test and display the coverage
 pnpm test:cov
+# To test in watch mode
+pnpm run test:watch
 ```
 
 Lint the project using *Oxlint*:
