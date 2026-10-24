@@ -43,7 +43,7 @@ pnpm test
 pnpm test:cov
 ```
 
-Lint the project using *ESLint*:
+Lint the project using *Oxlint*:
 
 ```bash
 pnpm run lint
